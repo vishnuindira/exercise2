@@ -28,9 +28,3 @@ jobs:
           push: true
           tags: |
             vishnuindira/exercise2:latest
-
-      - name: Stop and remove existing container if exists
-        run: docker stop my-app2 || true && docker rm my-app2 || true
-
-      - name: Start the container
-        run: docker run -d --name my-app2 -p 5000:5000 vishnuindira/exercise2:latest
