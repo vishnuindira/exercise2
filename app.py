@@ -6,7 +6,7 @@ from operator import itemgetter
 
 # Start a Flask application
 app = Flask(__name__)
-# Start a Flask-RESTful API on that application
+# Start a Flask-RESTful API on that application.
 api = Api(app)
 
 # Define a resource class "Employees" that will handle HTTP requests
